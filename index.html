@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Ethan Hauger — AI-built websites</title>
+  <meta name="description" content="Scroll through how your website gets built: idea, build, launch, open for business. AI-accelerated web development by Ethan Hauger." />
+  <style>
+    :root, .sw-root {
+      --sw-bg: #F4EDE1;          /* == the scene background colour */
+      --sw-ink: #33302B;
+      --sw-ink-soft: #7A7266;
+      --sw-accent: #C97B5A;      /* per-section accents override this at runtime */
+    }
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+  <div id="world">
+    <!-- Static SEO copy — the only crawlable text; the engine hides it on mount. -->
+    <section data-sw-seo>
+      <h1>Tell me what you need.</h1>
+      <p>AI-accelerated websites for small businesses, built and hand-finished by Ethan Hauger.</p>
+      <h2>Every site starts as a conversation — Tell me what you need.</h2>
+      <p>We talk through what your business actually needs before anything gets built.</p>
+      <h2>AI-accelerated build — Built in days, not months.</h2>
+      <p>AI does the heavy lifting; I shape and finish every page by hand.</p>
+      <h2>Go live — Launch day, handled.</h2>
+      <p>Hosting, domain, and mobile checks are part of the job, not an extra.</p>
+      <h2>Your site, working for you — Ready to build yours?</h2>
+      <p>A fast, modern site that brings customers to your door.</p>
+      <p><a href="mailto:ethan.chi.hauger@gmail.com">Start a project</a></p>
+    </section>
+  </div>
+
+  <script src="scrub-engine.js"></script>
+  <script>
+    mountScrollWorld(document.getElementById('world'), {
+      brand: { name: 'Ethan Hauger', href: '#top' },
+      hint: 'scroll to fly in',
+      diveScroll: 1.3,
+      crossfade: 0.08,
+      sections: [
+        {
+          id: 'studio', label: 'The Idea',
+          still: 'assets/studio.webp',
+          poster: 'assets/studio-poster.webp',
+          clip: 'assets/vid/studio.mp4',
+          clipMobile: 'assets/vid/studio-m.mp4',
+          posterMobile: 'assets/studio-poster-m.webp',
+          accent: '#8FB98A',
+          scroll: 1.6, linger: 0.4,
+          eyebrow: 'Every site starts as a conversation',
+          title: 'Tell me what you need.',
+          body: 'We talk through what your business actually needs before anything gets built.',
+          tags: ['Discovery', 'No jargon'],
+        },
+        {
+          id: 'workshop', label: 'The Build',
+          still: 'assets/workshop.webp',
+          poster: 'assets/workshop-poster.webp',
+          clip: 'assets/vid/workshop.mp4',
+          clipMobile: 'assets/vid/workshop-m.mp4',
+          posterMobile: 'assets/workshop-poster-m.webp',
+          accent: '#7FA8C9',
+          eyebrow: 'AI-accelerated build',
+          title: 'Built in days, not months.',
+          body: 'AI does the heavy lifting; I shape and finish every page by hand.',
+          tags: ['Claude-powered', 'Hand-finished'],
+        },
+        {
+          id: 'launchpad', label: 'The Launch',
+          still: 'assets/launchpad.webp',
+          poster: 'assets/launchpad-poster.webp',
+          clip: 'assets/vid/launchpad.mp4',
+          clipMobile: 'assets/vid/launchpad-m.mp4',
+          posterMobile: 'assets/launchpad-poster-m.webp',
+          accent: '#C97B5A',
+          eyebrow: 'Go live',
+          title: 'Launch day, handled.',
+          body: 'Hosting, domain, and mobile checks are part of the job, not an extra.',
+          tags: ['Hosting', 'Mobile-ready'],
+        },
+        {
+          id: 'storefront', label: 'Open for Business',
+          still: 'assets/storefront.webp',
+          poster: 'assets/storefront-poster.webp',
+          clip: 'assets/vid/storefront.mp4',
+          clipMobile: 'assets/vid/storefront-m.mp4',
+          posterMobile: 'assets/storefront-poster-m.webp',
+          accent: '#C97B5A',
+          scroll: 1.8, linger: 0.5,
+          eyebrow: 'Your site, working for you',
+          title: 'Ready to build yours?',
+          body: 'A fast, modern site that brings customers to your door.',
+          tags: [],
+          cta: { primary: { label: 'Start a project', href: 'mailto:ethan.chi.hauger@gmail.com' } },
+        },
+      ],
+      connectors: [],
+      connectorsMobile: [],
+    });
+  </script>
+</body>
+</html>

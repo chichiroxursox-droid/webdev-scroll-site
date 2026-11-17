@@ -1,0 +1,7 @@
+.DS_Store
+.vercel
+.env*
+# Scene clips (~35 MB, AI-generated); README shows how to pull them from the live site.
+assets/vid/
+# Freelance gig drafts and gallery samples, not part of the site.
+fiverr-assets/
